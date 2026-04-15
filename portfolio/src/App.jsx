@@ -4,7 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-function App() {
+/*function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -114,6 +114,39 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+    </>
+  )
+}
+
+export default <App>*/
+
+import { Routes, Route, Link } from "react-router-dom"
+import Inicio from "./pages/Inicio"
+import Proyectos from "./pages/Proyectos"
+import Formacion from "./pages/Formacion"
+import Contacto from "./pages/Contacto"
+
+function App() {
+  return (
+    <>
+      {/* NAVBAR */}
+      <nav>
+        <h1>Nora Unzaga</h1>
+        <ul>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/proyectos">Proyectos</Link></li>
+          <li><Link to="/formacion">Formación</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
+        </ul>
+      </nav>
+
+      {/* RUTAS */}
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/formacion" element={<Formacion />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
     </>
   )
 }

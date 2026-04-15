@@ -1,4 +1,4 @@
-.counter {
+/*.counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,41 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}*/
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: white;
 }
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* SECCIONES */
+section {
+  padding: 60px;
+}
+
+/* HERO */
+#inicio {
+  text-align: center;
+  background: #f5f5f5;
+}
+
+/* PROYECTOS */
+#proyectos div {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
