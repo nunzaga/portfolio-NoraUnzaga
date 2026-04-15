@@ -120,35 +120,31 @@ import './App.css'
 
 export default <App>*/
 
-import { Routes, Route, Link } from "react-router-dom"
-import Inicio from "./pages/Inicio"
-import Proyectos from "./pages/Proyectos"
-import Formacion from "./pages/Formacion"
-import Contacto from "./pages/Contacto"
+import React from 'react';
+import BarraNavegacion from './components/BarraNavegacion';
+import Inicio from './pages/Inicio';
+import Proyectos from './pages/Proyectos';
+import Formacion from './pages/Formacion';
+import Contacto from './pages/Contacto';
+import ThemeSelector from './components/ThemeSelector';
+import { useTheme } from './components/ThemeManager';
+import './App.css';
 
 function App() {
-  return (
-    <>
-      {/* NAVBAR */}
-      <nav>
-        <h1>Nora Unzaga</h1>
-        <ul>
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/proyectos">Proyectos</Link></li>
-          <li><Link to="/formacion">Formación</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
-        </ul>
-      </nav>
+  const { theme, toggleTheme } = useTheme();
 
-      {/* RUTAS */}
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/proyectos" element={<Proyectos />} />
-        <Route path="/formacion" element={<Formacion />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
-    </>
-  )
+  return (
+    <div className={`app-container ${theme}`}>
+      <BarraNavegacion />
+      <ThemeSelector theme={theme} toggleTheme={toggleTheme} />
+      <main>
+        <Inicio />
+        <Proyectos />
+        <Formacion />
+        <Contacto />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
