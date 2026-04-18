@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
 
-/*export const useTheme = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');*/
-
   export const useTheme = () => {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -13,8 +10,6 @@ import { useState, useEffect } from 'react';
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
-
-  //const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
   const toggleTheme = () => setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
   return { theme, toggleTheme };
