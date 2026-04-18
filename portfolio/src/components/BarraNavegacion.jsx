@@ -5,7 +5,7 @@ const BarraNavegacion = ({ theme, toggleTheme }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        {/* Nombre que aparece en tu PDF [cite: 1] */}
+        
         <span>Nora Unzaga Aranzabal</span>
       </div>
       <ul className="navbar-links">

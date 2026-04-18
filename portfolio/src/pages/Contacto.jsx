@@ -21,26 +21,6 @@ const Contacto = () => {
           <p><strong>GITHUB:</strong> github.com/NoraUnzaga</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="contacto-form">
-          <input 
-            type="text" 
-            placeholder="Tu Nombre" 
-            onChange={(e) => setMensaje({...mensaje, nombre: e.target.value})}
-            required 
-          />
-          <input 
-            type="email" 
-            placeholder="Tu Email" 
-            onChange={(e) => setMensaje({...mensaje, email: e.target.value})}
-            required 
-          />
-          <textarea 
-            placeholder="Escribe tu mensaje aquí..." 
-            onChange={(e) => setMensaje({...mensaje, texto: e.target.value})}
-            required
-          ></textarea>
-          <button type="submit">ENVIAR</button>
-        </form>
       </div>
     </section>
   );

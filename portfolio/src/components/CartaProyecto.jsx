@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 const CartaProyecto = ({ proyecto }) => {
-  const modalRef = useRef(null); // Segundo Hook: useRef
+  const modalRef = useRef(null); 
 
   return (
     <div className="card">
