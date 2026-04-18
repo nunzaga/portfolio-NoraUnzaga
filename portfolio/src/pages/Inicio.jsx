@@ -6,9 +6,8 @@ const Inicio = () => (
       className="hero-img" 
     />
     <h1>Nora Unzaga Aranzabal</h1>
-    <p>Desarrolladora Web | Creativa | Estudiante</p>
+    <p>Ingeniera Informatíca| Estudiante</p>
     <div className="hero-content">
-      {/* Aquí iría la descripción tipo "bhsdbk..." del PDF */}
       <p>Bienvenida/o a mi portfolio personal donde muestro mis trabajos y formación.</p>
     </div>
   </section>
