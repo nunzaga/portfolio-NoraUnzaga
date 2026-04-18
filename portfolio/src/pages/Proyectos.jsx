@@ -26,7 +26,7 @@ const Proyectos = () => {
 
   return (
     <section id="proyectos">
-      <h2>Mis Proyectos</h2>
+      <h2>MIS PROYECTOS</h2>
       <select onChange={(e) => setFiltro(e.target.value)}>
         <option value="Todos">Todos</option>
         <option value="Odoo">ERP</option>
