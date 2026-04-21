@@ -22,7 +22,7 @@ const Formacion = () => {
       <div className="formacion-contenido">
         <div className="formacion-imagen">
           <img 
-            src="/src/assets/foto-trabajando.jpg" 
+            src="/src/assets/foto-trabajando.png" 
             alt="Formación académica" 
             className="formacion-img"
           />

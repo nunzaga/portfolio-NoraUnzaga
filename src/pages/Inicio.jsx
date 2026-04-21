@@ -1,7 +1,7 @@
 const Inicio = () => (
   <section id="inicio" className="hero">
     <img 
-      src="/src/assets/foto-perfil.jpg" 
+      src="/src/assets/foto-perfil.png" 
       alt="Nora Unzaga" 
       className="hero-img" 
     />
