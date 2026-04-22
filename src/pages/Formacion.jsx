@@ -1,4 +1,6 @@
 import React from 'react';
+import fotoTrabajando from '/foto-trabajando.png';
+
 
 const Formacion = () => {
   const estudios = [
@@ -22,7 +24,7 @@ const Formacion = () => {
       <div className="formacion-contenido">
         <div className="formacion-imagen">
           <img 
-            src="/src/assets/foto-trabajando.png" 
+            src={fotoTrabajando} 
             alt="Formación académica" 
             className="formacion-img"
           />
