@@ -1,7 +1,9 @@
+import fotoPerfil from '/foto-perfil.png';
+
 const Inicio = () => (
   <section id="inicio" className="hero">
     <img 
-      src="/public/foto-perfil.png" 
+      src={fotoPerfil}
       alt="Nora Unzaga" 
       className="hero-img" 
     />
